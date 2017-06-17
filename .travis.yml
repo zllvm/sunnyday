@@ -13,6 +13,8 @@ deploy:
   detect_encoding: true
   on:
     branch: master
+script: 
+  - make build    
 notifications:
   email:
     on_failure: always
