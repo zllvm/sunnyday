@@ -6,9 +6,10 @@ deploy:
     endpoint: http://zllvm-sunnyday.s3-website-us-east-1.amazonaws.com
     region: us-east-1
     skip_cleanup: true
-    local-dir: output
     acl: public_read
     detect_encoding: true
+    on:
+        branch: master
 notifications:
     email:
         on_failure: always
